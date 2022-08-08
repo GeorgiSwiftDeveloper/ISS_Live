@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5E83A04F28A1885400AD0456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83A04E28A1885400AD0456 /* AppDelegate.swift */; };
 		5E83A05128A1885400AD0456 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83A05028A1885400AD0456 /* SceneDelegate.swift */; };
-		5E83A05328A1885400AD0456 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83A05228A1885400AD0456 /* ViewController.swift */; };
+		5E83A05328A1885400AD0456 /* ISSHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83A05228A1885400AD0456 /* ISSHomeViewController.swift */; };
 		5E83A05628A1885400AD0456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E83A05428A1885400AD0456 /* Main.storyboard */; };
 		5E83A05928A1885400AD0456 /* ISS_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E83A05728A1885400AD0456 /* ISS_App.xcdatamodeld */; };
 		5E83A05B28A1885600AD0456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E83A05A28A1885600AD0456 /* Assets.xcassets */; };
@@ -17,6 +17,8 @@
 		5E83A06928A1885600AD0456 /* ISS_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83A06828A1885600AD0456 /* ISS_AppTests.swift */; };
 		5E83A07328A1885600AD0456 /* ISS_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83A07228A1885600AD0456 /* ISS_AppUITests.swift */; };
 		5E83A07528A1885600AD0456 /* ISS_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83A07428A1885600AD0456 /* ISS_AppUITestsLaunchTests.swift */; };
+		5E83A08328A1888900AD0456 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83A08228A1888900AD0456 /* Constants.swift */; };
+		5E83A08828A1894D00AD0456 /* NSObject+ISSServiceHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E83A08728A1894D00AD0456 /* NSObject+ISSServiceHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,7 @@
 		5E83A04B28A1885400AD0456 /* ISS_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISS_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E83A04E28A1885400AD0456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E83A05028A1885400AD0456 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5E83A05228A1885400AD0456 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5E83A05228A1885400AD0456 /* ISSHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSHomeViewController.swift; sourceTree = "<group>"; };
 		5E83A05528A1885400AD0456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E83A05828A1885400AD0456 /* ISS_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ISS_App.xcdatamodel; sourceTree = "<group>"; };
 		5E83A05A28A1885600AD0456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		5E83A06E28A1885600AD0456 /* ISS_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISS_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E83A07228A1885600AD0456 /* ISS_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISS_AppUITests.swift; sourceTree = "<group>"; };
 		5E83A07428A1885600AD0456 /* ISS_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISS_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5E83A08228A1888900AD0456 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5E83A08528A1894C00AD0456 /* ISS_App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ISS_App-Bridging-Header.h"; sourceTree = "<group>"; };
+		5E83A08628A1894D00AD0456 /* NSObject+ISSServiceHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ISSServiceHandler.h"; sourceTree = "<group>"; };
+		5E83A08728A1894D00AD0456 /* NSObject+ISSServiceHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ISSServiceHandler.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +107,11 @@
 		5E83A04D28A1885400AD0456 /* ISS_App */ = {
 			isa = PBXGroup;
 			children = (
+				5E83A08928A1899800AD0456 /* Controllers */,
+				5E83A08428A1891B00AD0456 /* Services */,
+				5E83A08128A1888900AD0456 /* Common */,
 				5E83A04E28A1885400AD0456 /* AppDelegate.swift */,
 				5E83A05028A1885400AD0456 /* SceneDelegate.swift */,
-				5E83A05228A1885400AD0456 /* ViewController.swift */,
 				5E83A05428A1885400AD0456 /* Main.storyboard */,
 				5E83A05A28A1885600AD0456 /* Assets.xcassets */,
 				5E83A05C28A1885600AD0456 /* LaunchScreen.storyboard */,
@@ -128,6 +136,32 @@
 				5E83A07428A1885600AD0456 /* ISS_AppUITestsLaunchTests.swift */,
 			);
 			path = ISS_AppUITests;
+			sourceTree = "<group>";
+		};
+		5E83A08128A1888900AD0456 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5E83A08228A1888900AD0456 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5E83A08428A1891B00AD0456 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5E83A08628A1894D00AD0456 /* NSObject+ISSServiceHandler.h */,
+				5E83A08728A1894D00AD0456 /* NSObject+ISSServiceHandler.m */,
+				5E83A08528A1894C00AD0456 /* ISS_App-Bridging-Header.h */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5E83A08928A1899800AD0456 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E83A05228A1885400AD0456 /* ISSHomeViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +232,7 @@
 				TargetAttributes = {
 					5E83A04A28A1885400AD0456 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					5E83A06328A1885600AD0456 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -261,7 +296,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E83A05328A1885400AD0456 /* ViewController.swift in Sources */,
+				5E83A08828A1894D00AD0456 /* NSObject+ISSServiceHandler.m in Sources */,
+				5E83A08328A1888900AD0456 /* Constants.swift in Sources */,
+				5E83A05328A1885400AD0456 /* ISSHomeViewController.swift in Sources */,
 				5E83A04F28A1885400AD0456 /* AppDelegate.swift in Sources */,
 				5E83A05128A1885400AD0456 /* SceneDelegate.swift in Sources */,
 				5E83A05928A1885400AD0456 /* ISS_App.xcdatamodeld in Sources */,
@@ -439,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZLYDMFUQA6;
@@ -457,6 +495,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "evInstalation.ISS-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ISS_App/Services/ISS_App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -467,6 +507,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZLYDMFUQA6;
@@ -485,6 +526,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "evInstalation.ISS-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ISS_App/Services/ISS_App-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
