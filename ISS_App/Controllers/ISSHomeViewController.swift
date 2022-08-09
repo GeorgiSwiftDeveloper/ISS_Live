@@ -40,7 +40,7 @@ class ISSHomeViewController: UIViewController {
     }
     
     private func updateUI() {
-        self.navigationItem.title = Constant.Common.issTitle
+        self.navigationItem.title = Constant.issTitle
         
         view.addSubview(map)
     }
@@ -48,7 +48,7 @@ class ISSHomeViewController: UIViewController {
     private func setupMapView() {
         map.delegate = self
         annotationPoint = MKPointAnnotation()
-        annotationPoint?.title = Constant.Common.issTitle
+        annotationPoint?.title = Constant.issTitle
     }
     
     private func setupTimer() {
@@ -94,9 +94,9 @@ extension ISSHomeViewController: MKAnnotation {
 
 extension ISSHomeViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        let annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: Constant.Common.issTitle)
+        let annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: Constant.issTitle)
         annotationView.markerTintColor = .blue
-        annotationView.glyphImage = UIImage(named: "\(Constant.Common.issImageName)")
+        annotationView.glyphImage = UIImage(named: "\(Constant.issImageName)")
         
         return annotationView
     }

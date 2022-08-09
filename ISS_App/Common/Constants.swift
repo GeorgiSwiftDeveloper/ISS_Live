@@ -10,8 +10,6 @@ import UIKit
 import MapKit
 
 struct Constant {
-    struct Common {
         static let issTitle = "ISS"
         static let issImageName = "satelite"
-    }
 }
